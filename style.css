@@ -1,0 +1,258 @@
+/* Dev Kyys Apeka */
+/* Inline CSS */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.618;
+    margin: 0;
+    background-color: #e5e5e5;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://www.view-page-source.com/i/source-code-edit.webp);
+    color: #424c57;
+}
+
+@media screen and (min-width: 1001px) {
+    body {
+        background-size: contain;
+        background-image: url(https://www.view-page-source.com/i/source-code-screen.webp);
+    }
+}
+
+nav {
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav a {
+    padding: 10px 16px 2px;
+    text-transform: uppercase;
+    font-size: 17px;
+    display: block;
+}
+
+nav #menu {
+    background-color: #fff;
+    display: none;
+    margin: 0;
+}
+
+#hamb {
+    color: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    padding: 10px 16px;
+}
+
+.active {
+    width: 100px;
+}
+
+@media screen and (min-width: 1074px) {
+    nav {
+        background-color: transparent;
+    }
+
+    nav #menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        text-align: right;
+        background: none;
+        margin: 18px;
+    }
+
+    #hamb {
+        display: none;
+    }
+
+    nav li a {
+        color: #fff;
+    }
+
+    nav li a:hover {
+        color: #ccc;
+    }
+}
+
+main {
+    min-height: 1000px;
+    position: relative;
+    top: 0;
+}
+
+.addiv {
+    min-height: 280px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.6em;
+    line-height: 1;
+}
+
+.meta h1 {
+    color: #000;
+}
+
+@media screen and (min-width: 1074px) {
+    h1 {
+        font-size: 2.3em;
+    }
+}
+
+#welcome,
+.meta {
+    min-height: 190px;
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 22px 22px;
+    text-align: center;
+    z-index: 2;
+}
+
+#menutog {
+    display: none;
+}
+
+#menutog:checked ~ #menu {
+    display: block;
+}
+
+.code-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.code-header,
+.code-footer {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+pre {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    max-height: 500px;
+    overflow: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrap {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.no-wrap {
+    white-space: pre;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.info-section {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.page-speed {
+    width: 44%;
+}
+
+.server-info,
+.page-info {
+    width: 28%;
+}
+
+.timing-chart-container {
+    display: flex;
+    align-items: center;
+}
+
+.server-info li,
+.page-info li {
+    display: list-item;
+}
+
+@media (max-width: 768px) {
+    .page-speed,
+    .server-info,
+    .page-info {
+        width: 100%;
+    }
+}
+
+.timing-chart {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.total-time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+pre[class*="language-"] {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    max-height: 500px;
+    overflow: auto;
+}
+
+
+/* External CSS: https://www.view-page-source.com/c/x.css?ver=1.0 */
